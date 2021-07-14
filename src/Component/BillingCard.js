@@ -44,6 +44,22 @@ const Country = [
     label: "India",
   },
   {
+    value: "Argentina",
+    label: "Argentina",
+  },
+  {
+    value: "Afghanistan",
+    label: "Afghanistan",
+  },
+  {
+    value: "Australia",
+    label: "Australia",
+  },
+  {
+    value: "Bangladesh",
+    label: "Bangladesh",
+  },
+  {
     value: "HONG-KONG",
     label: "HONG-KONG",
   },
@@ -51,10 +67,7 @@ const Country = [
     value: "USA",
     label: "USA",
   },
-  {
-    value: "argentina",
-    label: "argentina",
-  },
+ 
 ];
 
 function BillingCard({ heading, name, sideline }) {

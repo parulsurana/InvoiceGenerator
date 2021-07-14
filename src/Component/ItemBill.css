@@ -5,7 +5,6 @@
     line-height: 1.5;
     margin: 0px;
     font-size: 0.875rem;
-    color: rgb(255, 255, 255);
 }
 
 .quantity{
@@ -15,7 +14,6 @@
     line-height: 1.5;
     margin: 0px;
     font-size: 0.875rem;
-    color: rgb(255, 255, 255);
 }
 
 .null{
@@ -40,9 +38,21 @@
 }
 
 .newline{
-    margin: 1%;
-    border: dotted;
+    margin: 15px;
+    border: 1.5px dotted;
     background-color: rgb(243, 245, 247);
+}
+
+.newline1{
+    margin: 15px;
+    border: 1.5px dotted ;
+    border-radius: 1rem;
+    width: 15%;
+    font-size: .9rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 span.text{
@@ -53,4 +63,8 @@ span.text{
     font-size: 1.2rem;
     cursor: pointer;
     
+}
+
+.cross{
+    margin-top: 6%;
 }

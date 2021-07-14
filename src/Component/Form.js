@@ -9,9 +9,17 @@ import {
   import { styled } from "@material-ui/core/styles";
   import BillingCard from "./BillingCard";
   import InsertPhotoIcon from "@material-ui/icons/InsertPhoto";
-  import { Autorenew, MailRounded } from "@material-ui/icons";
+  import {
+    Add,
+    AddCircleOutline,
+    Autorenew,
+    LocalOffer,
+    MailRounded,
+    SportsRugbySharp,
+    TagFaces,
+  } from "@material-ui/icons";
   import MaterialUiPhoneNumber from "material-ui-phone-number";
-  
+  import ItemBill from "./ItemBill";
   import SaveIcon from "@material-ui/icons/Save";
   
   //styling
@@ -73,7 +81,7 @@ import {
   function Form() {
     return (
       <Formm>
-        <InputHead defaultValue="Hello world" placeholder="manik" />
+        <InputHead defaultValue="INVOICE" />
         <div style={{ margin: "20px" }}>
           <FormTop>
             <div
@@ -98,7 +106,7 @@ import {
                   style={{ width: "39%" }}
                   required
                   id="standard-required"
-                  defaultValue="76566546"
+                  defaultValue="00001   "
                 />
               </div>
               <div
@@ -112,12 +120,12 @@ import {
                 <TextField
                   required
                   id="standard-required"
-                  defaultValue="Invoice No."
+                  defaultValue="Invoice Date"
                 />
                 <TextField
                   required
                   id="standard-required"
-                  defaultValue="Hello World"
+                  defaultValue="2021-06-14"
                   type="date"
                 />
               </div>
@@ -132,12 +140,12 @@ import {
                 <TextField
                   required
                   id="standard-required"
-                  defaultValue="Invoice No."
+                  defaultValue="Due Date"
                 />
                 <TextField
                   required
                   id="standard-required"
-                  defaultValue="Hello World"
+                  defaultValue="2021-06-14"
                   type="date"
                 />
               </div>
@@ -162,6 +170,71 @@ import {
             />
           </div>
   
+          <div>
+            <ItemBill />
+            <div className="newline">
+              <span className="text">Add New Line</span>
+            </div>
+          </div>
+  
+          <div style={{ display: "flex" }}>
+            <div style={{ flex: "1.2" }}></div>
+            <div style={{ flex: "0.4", margin: "15px" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  margin: "10px",
+                  fontWeight: "400",
+                  fontSize: "1.2rem",
+                  color: "rgba(0,0,0,0.8)",
+                }}
+              >
+                <LocalOffer />
+                Add Item Discount
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  margin: "10px",
+                  fontWeight: "400",
+                  fontSize: "1.2rem",
+                  color: "rgba(0,0,0,0.8)",
+                }}
+              >
+                <AddCircleOutline />
+                Add Discount / Reductions
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  margin: "10px",
+                  fontWeight: "400",
+                  fontSize: "1.2rem",
+                  color: "rgba(0,0,0,0.8)",
+                }}
+              >
+                <AddCircleOutline />
+                Add Additional Charges
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  margin: "10px",
+                  fontWeight: "800",
+                  fontSize: "1.5rem",
+                  color: "rgba(0,0,0,0.5)",
+                }}
+              >
+                <div>Total (INR)</div>
+                <div>₹1</div>
+              </div>
+            </div>
+          </div>
+  
           <div
             style={{
               display: "flex",
@@ -171,25 +244,22 @@ import {
               backgroundColor: "rgb(142, 201, 228,0.3)",
             }}
           >
-            <Terms defaultValue="Terms and Condition" placeholder="manik" />
+            <Terms defaultValue="Terms and Condition" />
             <TermsInput
-              value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+              value="Please pay within 15 days from the date of invoice, overdue interest @ 14% will be charged on delayed payments."
               startAdornment={
                 <InputAdornment position="start">1.</InputAdornment>
               }
             />
             <TermsInput
-              value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+              value="Please quote invoice number when remitting funds."
               startAdornment={
                 <InputAdornment position="start">2.</InputAdornment>
               }
             />
-            <TermsInput
-              value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
-              startAdornment={
-                <InputAdornment position="start">3.</InputAdornment>
-              }
-            />
+            <div className="newline1">
+              <span>Add New Term</span>
+            </div>
           </div>
           <div
             style={{
@@ -198,7 +268,7 @@ import {
               backgroundColor: "rgb(142, 201, 228,0.3)",
             }}
           >
-            <Terms defaultValue="Your Contact details" placeholder="manik" />
+            <Terms defaultValue="Your Contact details"/>
             <div style={{ fontSize: "1rem" }}>
               For any enquiry, reach out via email at{" "}
               <Input
