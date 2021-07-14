@@ -1,0 +1,11 @@
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MuiTextField-root{
+    margin: 20px;
+    font-size: 20px;
+    color: rgb(87, 87, 87);
+}

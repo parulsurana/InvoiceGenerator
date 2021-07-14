@@ -1,0 +1,56 @@
+.item{
+    grid-column: span 6 / auto;
+    display: block;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0px;
+    font-size: 0.875rem;
+    color: rgb(255, 255, 255);
+}
+
+.quantity{
+    grid-column: span 2 / auto;
+    display: block;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0px;
+    font-size: 0.875rem;
+    color: rgb(255, 255, 255);
+}
+
+.null{
+    grid-column: span 1 / auto;
+    display: block;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0px;
+    font-size: 0.875rem;
+    color: rgb(22, 28, 38);
+}
+
+.cross{
+    grid-column: span 1 / auto;
+    display: block;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 20px;
+    font-size: 0.875rem;
+    color: grey;
+    cursor: pointer;
+}
+
+.newline{
+    margin: 1%;
+    border: dotted;
+    background-color: rgb(243, 245, 247);
+}
+
+span.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    
+}

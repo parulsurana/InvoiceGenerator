@@ -1,13 +1,14 @@
 import React from 'react';
-import Header from './Component/Header';
-import InvoiceDetails from './Component/InvoiceDetails/InvoiceDetails';
 import './App.css';
+import ItemCard from './Component/ItemCard';
+import Form from './Component/Form';
+
 
 function App() {
   return (
     <div>
-     <Header />
-     <InvoiceDetails />
+     <Form />
+     <ItemCard />
     </div>
     
   );
